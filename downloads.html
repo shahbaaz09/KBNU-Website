@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Downloads – KBNU</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+
+
+<nav>
+  <div class="container nav-container">
+    <div class="logo">KHAJA BANDANAWAZ UNIVERSITY</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="academics.html">Academics</a></li>
+      <li><a href="admissions.html">Admissions</a></li>
+      <li><a href="downloads.html"class="active">Downloads</a></li>
+      <li><a href="results.html">Results</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- HERO -->
+    <header class="hero" style="
+  background: linear-gradient(rgba(85,110,160,0.4), rgba(85,110,160,0.4)),
+              url('assets/images/campus1.jpg') top/cover;">
+
+<!-- =============================== -->
+<!--        DOWNLOADS SECTION       -->
+<!-- =============================== -->
+
+<section class="downloads-section fade">
+  <div class="container">
+
+    <h2 class="section-title">Downloads</h2>
+
+    <!-- Search Bar -->
+    <input type="text" id="downloadSearch" placeholder="Search downloads..." class="download-search">
+
+    <!-- Category Tabs -->
+    <div class="download-tabs">
+      <button class="tab active" onclick="filterDownloads('all', event)">All</button>
+      <button class="tab" onclick="filterDownloads('ug', event)">UG</button>
+      <button class="tab" onclick="filterDownloads('pg', event)">PG</button>
+      <button class="tab" onclick="filterDownloads('phd', event)">PhD</button>
+      <button class="tab" onclick="filterDownloads('exam', event)">Examination</button>
+      <button class="tab" onclick="filterDownloads('forms', event)">Forms</button>
+      <button class="tab" onclick="filterDownloads('syllabus', event)">Syllabus</button>
+      <button class="tab" onclick="filterDownloads('circulars', event)">Circulars</button>
+    </div>
+
+    <!-- DOWNLOAD GRID -->
+    <div class="download-grid" id="downloadList">
+
+
+      <!-- ======================= -->
+      <!--       UG DOWNLOADS      -->
+      <!-- ======================= -->
+
+      <div class="download-card" data-category="ug">
+        <img src="assets/icons/pdf.png" class="download-icon">
+        <h3>UG Application Form 2024-25</h3>
+        <button class="download-btn" onclick="window.location.href='assets/pdfs/ug-application-form.pdf'">Download</button>
+      </div>
+
+      <div class="download-card" data-category="ug">
+        <img src="assets/icons/pdf.png" class="download-icon">
+        <h3>UG Prospectus 2024-25</h3>
+        <button class="download-btn" onclick="window.location.href='assets/pdfs/ug-prospectus.pdf'">Download</button>
+      </div>
+
+      <div class="download-card" data-category="ug">
+        <img src="assets/icons/pdf.png" class="download-icon">
+        <h3>UG Fee Structure 2024-25</h3>
+        <button class="download-btn" onclick="window.location.href='assets/pdfs/ug-fee-structure.pdf'">Download</button>
+      </div>
+
+      <div class="download-card" data-category="ug">
+        <img src="assets/icons/pdf.png" class="download-icon">
+        <h3>UG Admission Guidelines</h3>
+        <button class="download-btn" onclick="window.location.href='assets/pdfs/ug-admission-guidelines.pdf'">Download</button>
+      </div>
+
+
+
+      <!-- ======================= -->
+      <!--       PG DOWNLOADS      -->
+      <!-- ======================= -->
+
+      <div class="download-card" data-category="pg">
+        <img src="assets/icons/pdf.png" class="download-icon">
+        <h3>PG Application Form 2024-25</h3>
+        <button class="download-btn" onclick="window.location.href='assets/pdfs/pg-application-form.pdf'">Download</button>
+      </div>
+
+      <div class="download-card" data-category="pg">
+        <img src="assets/icons/pdf.png" class="download-icon">
+        <h3>PG Prospectus 2024</h3>
+        <button class="download-btn" onclick="window.location.href='assets/pdfs/pg-prospectus.pdf'">Download</button>
+      </div>
+
+      <div class="download-card" data-category="pg">
+        <img src="assets/icons/pdf.png" class="download-icon">
+        <h3>PG Fee Structure 2024-25</h3>
+        <button class="download-btn" onclick="window.location.href='assets/pdfs/pg-fee-structure.pdf'">Download</button>
+      </div>
+
+
+
+      <!-- ======================= -->
+      <!--       PhD DOWNLOADS     -->
+      <!-- ======================= -->
+
+      <div class="download-card" data-category="phd">
+        <img src="assets/icons/pdf.png" class="download-icon">
+        <h3>Ph.D Application Form 2024</h3>
+        <button class="download-btn" onclick="window.location.href='assets/pdfs/phd-application-form.pdf'">Download</button>
+      </div>
+
+      <div class="download-card" data-category="phd">
+        <img src="assets/icons/pdf.png" class="download-icon">
+        <h3>Ph.D Regulation Handbook</h3>
+        <button class="download-btn" onclick="window.location.href='assets/pdfs/phd-regulations.pdf'">Download</button>
+      </div>
+
+      <div class="download-card" data-category="phd">
+        <img src="assets/icons/pdf.png" class="download-icon">
+        <h3>Ph.D Entrance Exam Syllabus</h3>
+        <button class="download-btn" onclick="window.location.href='assets/pdfs/phd-syllabus.pdf'">Download</button>
+      </div>
+
+
+
+      <!-- ======================= -->
+      <!--     EXAM DOWNLOADS      -->
+      <!-- ======================= -->
+
+      <div class="download-card" data-category="exam">
+        <img src="assets/icons/pdf.png" class="download-icon">
+        <h3>Exam Notification – November 2024</h3>
+        <button class="download-btn" onclick="window.location.href='assets/pdfs/exam-notification-nov-2024.pdf'">Download</button>
+      </div>
+
+      <div class="download-card" data-category="exam">
+        <img src="assets/icons/pdf.png" class="download-icon">
+        <h3>UG Time Table (Sem 1–6)</h3>
+        <button class="download-btn" onclick="window.location.href='assets/pdfs/ug-time-table.pdf'">Download</button>
+      </div>
+
+      <div class="download-card" data-category="exam">
+        <img src="assets/icons/pdf.png" class="download-icon">
+        <h3>PG Time Table</h3>
+        <button class="download-btn" onclick="window.location.href='assets/pdfs/pg-time-table.pdf'">Download</button>
+      </div>
+
+      <div class="download-card" data-category="exam">
+        <img src="assets/icons/pdf.png" class="download-icon">
+        <h3>Revaluation Form</h3>
+        <button class="download-btn" onclick="window.location.href='assets/pdfs/revaluation-form.pdf'">Download</button>
+      </div>
+
+
+
+      <!-- ======================= -->
+      <!--     FORMS DOWNLOADS     -->
+      <!-- ======================= -->
+
+      <div class="download-card" data-category="forms">
+        <img src="assets/icons/pdf.png" class="download-icon">
+        <h3>Bonafide Certificate Form</h3>
+        <button class="download-btn" onclick="window.location.href='assets/pdfs/bonafide-form.pdf'">Download</button>
+      </div>
+
+      <div class="download-card" data-category="forms">
+        <img src="assets/icons/pdf.png" class="download-icon">
+        <h3>Transfer Certificate Form</h3>
+        <button class="download-btn" onclick="window.location.href='assets/pdfs/tc-form.pdf'">Download</button>
+      </div>
+
+      <div class="download-card" data-category="forms">
+        <img src="assets/icons/pdf.png" class="download-icon">
+        <h3>No Due Certificate</h3>
+        <button class="download-btn" onclick="window.location.href='assets/pdfs/no-due.pdf'">Download</button>
+      </div>
+
+      <div class="download-card" data-category="forms">
+        <img src="assets/icons/pdf.png" class="download-icon">
+        <h3>ID Card Application</h3>
+        <button class="download-btn" onclick="window.location.href='assets/pdfs/id-card-form.pdf'">Download</button>
+      </div>
+
+
+
+      <!-- ======================= -->
+      <!--   SYLLABUS DOWNLOADS    -->
+      <!-- ======================= -->
+
+      <div class="download-card" data-category="syllabus">
+        <img src="assets/icons/pdf.png" class="download-icon">
+        <h3>B.Sc Syllabus – Sem 1</h3>
+        <button class="download-btn" onclick="window.location.href='assets/pdfs/bsc-s1-syllabus.pdf'">Download</button>
+      </div>
+
+      <div class="download-card" data-category="syllabus">
+        <img src="assets/icons/pdf.png" class="download-icon">
+        <h3>B.Com Syllabus – All Sems</h3>
+        <button class="download-btn" onclick="window.location.href='assets/pdfs/bcom-syllabus.pdf'">Download</button>
+      </div>
+
+      <div class="download-card" data-category="syllabus">
+        <img src="assets/icons/pdf.png" class="download-icon">
+        <h3>M.Sc Syllabus</h3>
+        <button class="download-btn" onclick="window.location.href='assets/pdfs/msc-syllabus.pdf'">Download</button>
+      </div>
+
+
+
+      <!-- ======================= -->
+      <!--   CIRCULARS DOWNLOADS   -->
+      <!-- ======================= -->
+
+      <div class="download-card" data-category="circulars">
+        <img src="assets/icons/pdf.png" class="download-icon">
+        <h3>Holiday List 2024</h3>
+        <button class="download-btn" onclick="window.location.href='assets/pdfs/holiday-list-2024.pdf'">Download</button>
+      </div>
+
+      <div class="download-card" data-category="circulars">
+        <img src="assets/icons/pdf.png" class="download-icon">
+        <h3>General University Circulars</h3>
+        <button class="download-btn" onclick="window.location.href='assets/pdfs/general-circulars.pdf'">Download</button>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+
+ <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <p><strong>Khaja Bandanawaz University</strong></p>
+        <p>Rauza-i Buzurg, Kalaburagi – 585104, Karnataka, India</p>
+        <p>Email: contact@kbn.university | Phone: +91 8472-245555</p>
+        <p>© 2025 Khaja Bandanawaz University. Designed by Mohammad Shahbaaz.</p>
+      </div>
+    </footer>
+
+<script src="assets/js/javasfile.js"></script>
+
+
+</body>
+</html>

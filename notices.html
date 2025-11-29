@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notices & Circulars – Khaja Bandanawaz University</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<nav>
+  <div class="container nav-container">
+    <div class="logo">KHAJA BANDANAWAZ UNIVERSITY</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="academics.html">Academics</a></li>
+      <li><a href="admissions.html">Admissions</a></li>
+      <li><a href="downloads.html">Downloads</a></li>
+      <li><a href="results.html">Results</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+    <!-- HERO -->
+     <header class="hero" style="
+  background: linear-gradient(rgba(85,110,160,0.4), rgba(85,110,160,0.4)),
+              url('assets/images/campus1.jpg') center/cover;">
+
+      <div class="container">
+        <h1>Notices & Circulars</h1>
+        <p>Latest academic notices, exam announcements and university circulars</p>
+      </div>
+    </header>
+
+    <!-- SEARCH BAR -->
+    <section class="fade">
+      <div class="container">
+        <input type="text" id="noticeSearch" placeholder="Search Notices..." class="search-input" onkeyup="searchNotices()">
+      </div>
+    </section>
+
+    <!-- NOTICE SECTIONS -->
+    <section class="fade">
+      <div class="container">
+
+        <!-- ACADEMIC NOTICES -->
+        <h2>Academic Notices</h2>
+        <div class="notice-list">
+
+          <div class="notice-card">
+            <span class="notice-date">12 Jan 2025</span>
+            <h3>Re-opening of University after Winter Break <span class="new-badge">NEW</span></h3>
+            <button class="btn" onclick="window.location.href='assets/pdfs/notice_reopening.pdf'">Download</button>
+          </div>
+
+          <div class="notice-card">
+            <span class="notice-date">05 Jan 2025</span>
+            <h3>Revised Academic Calendar 2025</h3>
+            <button class="btn" onclick="window.location.href='assets/pdfs/academic_calendar_2025.pdf'">Download</button>
+          </div>
+
+        </div>
+
+        <!-- EXAM NOTICES -->
+        <h2 style="margin-top:40px;">Examination Notices</h2>
+        <div class="notice-list">
+
+          <div class="notice-card">
+            <span class="notice-date">02 Jan 2025</span>
+            <h3>UG Odd Semester Exam Fee Notification</h3>
+            <button class="btn" onclick="window.location.href='assets/pdfs/ug_fee_notice.pdf'">Download</button>
+          </div>
+
+          <div class="notice-card">
+            <span class="notice-date">28 Dec 2024</span>
+            <h3>Ph.D Coursework Examination Notification</h3>
+            <button class="btn" onclick="window.location.href='assets/pdfs/phd_exam_notice.pdf'">Download</button>
+          </div>
+
+        </div>
+
+        <!-- GENERAL NOTIFICATIONS -->
+        <h2 style="margin-top:40px;">General University Circulars</h2>
+        <div class="notice-list">
+
+          <div class="notice-card">
+            <span class="notice-date">20 Dec 2024</span>
+            <h3>Holiday List 2025</h3>
+            <button class="btn" onclick="window.location.href='assets/pdfs/holiday_list_2025.pdf'">Download</button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <p><strong>Khaja Bandanawaz University</strong></p>
+        <p>Rauza-i Buzurg, Kalaburagi – 585104, Karnataka, India</p>
+        <p>Email: contact@kbn.university &nbsp;|&nbsp; Phone: +91 8472-245555</p>
+        <p>© 2025 Khaja Bandanawaz University. Designed by Mohammad Shahbaaz.</p>
+      </div>
+    </footer>
+
+    <!-- NOTICE SEARCH SCRIPT -->
+    <script>
+      function searchNotices() {
+        let input = document.getElementById("noticeSearch").value.toLowerCase();
+        let cards = document.getElementsByClassName("notice-card");
+
+        for (let i = 0; i < cards.length; i++) {
+          let text = cards[i].innerText.toLowerCase();
+          cards[i].style.display = text.includes(input) ? "block" : "none";
+        }
+      }
+    </script>
+
+</body>
+</html>
